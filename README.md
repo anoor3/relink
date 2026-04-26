@@ -1,83 +1,117 @@
-# reLink
+# reLink (iOS • Local‑First Relationship Recall)
 
-  A local-first iOS app for “relationship recall”: capture a quick voice memo
-  after meeting someone, extract a structured profile, and generate briefs +
-  outreach drafts when you need to follow up.
+  reLink is a SwiftUI iOS app that helps you stay on top of important
+  relationships. Right after meeting someone, you record a quick voice memo;
+  the app transcribes it, extracts a structured profile (who they are, what you
+  discussed, follow‑up intent, signals), and later generates a crisp “brief” and
+  outreach drafts so you can reconnect naturally.
 
-  This repo contains:
+  This folder (relink/relink/) is the full iOS app implementation (local-first
+  by default).
 
-  - relink/ — SwiftUI iOS app (local-first, on-device UI + local JSON store)
-  - relink/backend/ — optional FastAPI backend scaffold (useful for a server-
-  driven version)
+  ## Core Experience
 
-  ## What it does
+  1. Capture: record a short voice memo after a conversation
+  2. Understand:
+      - Transcribe the memo (OpenAI Whisper)
+      - Extract a clean profile (LLM JSON extraction)
+  3. Recall & act:
+      - View a brief before you reach out
+      - Get nudges (who to follow up with)
+      - Generate email drafts and a lightweight outreach plan
 
-  - Record a short voice memo right after a conversation
-  - Transcribe audio with OpenAI Whisper
-  - Extract a structured “person profile” (name, company, role, topics, signals,
-  etc.)
-  - Show:
-      - A concise brief before you reach out
-      - Nudges (who to follow up with next)
-      - Email drafts / outreach plans
-  - Optional integrations:
-      - AgentMail: send/schedule outreach emails
-      - Nia: save/search context semantically (stub/variable response support)
+  ## What’s “local‑first” here?
 
-  ## iOS App (SwiftUI)
+  - Your people + interactions are stored locally using LocalStore (JSON on
+  disk).
+  - The app works end‑to‑end without needing the backend server.
+  - External APIs are only used for “intelligence” features (transcription +
+  drafting), and optional integrations.
+
+  Local storage location:
+
+  - App Support directory → relink/store.json
+
+  ## Integrations (Optional)
+
+  - OpenAI
+      - Whisper transcription (audio/transcriptions)
+      - Chat completions for JSON extraction, briefs, and drafting
+  - AgentMail (optional)
+      - Create/manage inboxes and send/schedule messages (best-effort support in
+  the app)
+  - Nia (optional)
+      - Save/search person context for semantic retrieval
+
+  If you don’t configure AgentMail or Nia, the app still runs; those features
+  simply stay inactive.
+
+  ## Setup (Xcode)
 
   ### Requirements
 
-  - Xcode (project currently targets iOS 18.5 in relink.xcodeproj)
-  - Microphone access (you’ll be prompted on first record)
+  - Xcode (this project is currently set to iOS 18.5 in the .xcodeproj)
+  - Microphone permission (requested on first use)
 
   ### Run
 
-  1. Open relink/relink.xcodeproj in Xcode
-  2. Select a simulator or device
+  1. Open relink.xcodeproj
+  2. Select a device/simulator
   3. Press Run
 
-  ### API keys / configuration
+  ## Configuration / API Keys
 
   The app reads secrets from either:
 
-  - Xcode Scheme env vars: Product → Scheme → Edit Scheme… → Run → Arguments →
-  Environment Variables
-  - OR Info.plist keys (if you prefer bundling a dev-only plist locally)
+  - Xcode Scheme Environment Variables (recommended for local dev), or
+  - Info.plist keys (if you prefer, but don’t commit real keys)
 
-  Required (for transcription + LLM features)
+  Set these in Xcode:
+  Product → Scheme → Edit Scheme… → Run → Arguments → Environment Variables
+
+  ### Required (for AI features)
 
   - OPENAI_API_KEY
 
-  Optional
+  ### Optional
 
   - RELINK_OPENAI_AGENT_MODEL (defaults to gpt-4o-mini)
   - AGENTMAIL_API_KEY (enables AgentMail features)
-  - NIA_API_KEY (enables Nia context save/search)
+  - NIA_API_KEY (enables Nia features)
   - NIA_BASE_URL (override Nia API base URL)
 
-  ### Local-first storage
+  ## Project Layout (important files)
 
-  - People + interactions are stored locally as JSON:
-      - App Support directory → relink/store.json
-  - Demo data is seeded on first launch (via DemoSeeder / RichDemoSeeder).
-      - To reset: delete the app from the simulator/device (or clear relevant
-  UserDefaults keys).
+  - Audio/AudioRecorder.swift
+      - Handles mic permission + recording to a temporary .m4a
+  - Services/OpenAIClient.swift
+      - Whisper transcription + chat completions (text + JSON)
+  - Network/APIClient.swift
+      - Orchestrates flows: add person from audio, briefs, nudges, drafts
+  - Persistence/LocalStore.swift
+      - Local JSON persistence for people + interactions
+  - Services/AgentMailClient.swift
+      - AgentMail inbox/draft/send support
+  - Services/NiaClient.swift
+      - Context save + semantic search
+  - Services/DemoSeeder.swift (+ RichDemoSeeder.swift)
+      - Seeds demo people/interactions for a strong first-run experience
+  - Views/
+      - SwiftUI UI (cards, detail views, brief bubbles, drafting UI)
 
-  ## Backend (FastAPI scaffold) (Optional)
+  ## Demo Mode / Resetting Data
 
-  There’s a backend scaffold in relink/backend/ that mirrors the app’s core
-  flows (add person, briefs, nudges, email drafts, etc.).
+  The app can seed demo contacts on first launch.
 
-  - Setup + run instructions live in: relink/backend/README.md
-  - Key tip: create the Python venv outside the iOS app folder (to avoid Xcode
-  bundling issues).
+  To fully reset:
 
-  ## Repo layout
+  - Delete the app from the simulator/device (clears UserDefaults + app storage)
+  - Or manually clear the App Support directory and relevant UserDefaults keys
 
-  - relink/relink/ — iOS app source (SwiftUI)
-  - relink/relink/Services/ — OpenAI / AgentMail / Nia clients + app services
-  - relink/relink/Audio/ — audio recording
-  - relink/relink/Persistence/ — LocalStore JSON persistence
-  - relink/backend/ — FastAPI app + sqlite schema + integrations stubs
+  ## Notes / Troubleshooting
 
+
+  To fully reset:
+  - Delete the app from the simulator/device (clears `UserDefaults` + app
+  storage)
+  - Or manually clear the App Support directory and relevant `UserDefaults` keys
