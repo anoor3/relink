@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		C4E28DF32F9CA4E600A6EA82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4E28DDD2F9CA4E400A6EA82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4E28DE42F9CA4E400A6EA82;
+			remoteInfo = relink;
+		};
+		C4E28DFD2F9CA4E600A6EA82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4E28DDD2F9CA4E400A6EA82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4E28DE42F9CA4E400A6EA82;
+			remoteInfo = relink;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C4E28DE52F9CA4E400A6EA82 /* relink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = relink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4E28DF22F9CA4E600A6EA82 /* relinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = relinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4E28DFC2F9CA4E600A6EA82 /* relinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = relinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C44D07502F9CBCC200F19221 /* Exceptions for "relink" folder in "relink" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				.pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework,
+			);
+			target = C4E28DE42F9CA4E400A6EA82 /* relink */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C4E28DE72F9CA4E400A6EA82 /* relink */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C44D07502F9CBCC200F19221 /* Exceptions for "relink" folder in "relink" target */,
+			);
+			path = relink;
+			sourceTree = "<group>";
+		};
+		C4E28DF52F9CA4E600A6EA82 /* relinkTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = relinkTests;
+			sourceTree = "<group>";
+		};
+		C4E28DFF2F9CA4E600A6EA82 /* relinkUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = relinkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4E28DE22F9CA4E400A6EA82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4E28DEF2F9CA4E600A6EA82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4E28DF92F9CA4E600A6EA82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4E28DDC2F9CA4E400A6EA82 = {
+			isa = PBXGroup;
+			children = (
+				C4E28DE72F9CA4E400A6EA82 /* relink */,
+				C4E28DF52F9CA4E600A6EA82 /* relinkTests */,
+				C4E28DFF2F9CA4E600A6EA82 /* relinkUITests */,
+				C4E28DE62F9CA4E400A6EA82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4E28DE62F9CA4E400A6EA82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4E28DE52F9CA4E400A6EA82 /* relink.app */,
+				C4E28DF22F9CA4E600A6EA82 /* relinkTests.xctest */,
+				C4E28DFC2F9CA4E600A6EA82 /* relinkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4E28DE42F9CA4E400A6EA82 /* relink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4E28E062F9CA4E600A6EA82 /* Build configuration list for PBXNativeTarget "relink" */;
+			buildPhases = (
+				C4E28DE12F9CA4E400A6EA82 /* Sources */,
+				C4E28DE22F9CA4E400A6EA82 /* Frameworks */,
+				C4E28DE32F9CA4E400A6EA82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C4E28DE72F9CA4E400A6EA82 /* relink */,
+			);
+			name = relink;
+			packageProductDependencies = (
+			);
+			productName = relink;
+			productReference = C4E28DE52F9CA4E400A6EA82 /* relink.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4E28DF12F9CA4E600A6EA82 /* relinkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4E28E092F9CA4E600A6EA82 /* Build configuration list for PBXNativeTarget "relinkTests" */;
+			buildPhases = (
+				C4E28DEE2F9CA4E600A6EA82 /* Sources */,
+				C4E28DEF2F9CA4E600A6EA82 /* Frameworks */,
+				C4E28DF02F9CA4E600A6EA82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4E28DF42F9CA4E600A6EA82 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C4E28DF52F9CA4E600A6EA82 /* relinkTests */,
+			);
+			name = relinkTests;
+			packageProductDependencies = (
+			);
+			productName = relinkTests;
+			productReference = C4E28DF22F9CA4E600A6EA82 /* relinkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4E28DFB2F9CA4E600A6EA82 /* relinkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4E28E0C2F9CA4E600A6EA82 /* Build configuration list for PBXNativeTarget "relinkUITests" */;
+			buildPhases = (
+				C4E28DF82F9CA4E600A6EA82 /* Sources */,
+				C4E28DF92F9CA4E600A6EA82 /* Frameworks */,
+				C4E28DFA2F9CA4E600A6EA82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4E28DFE2F9CA4E600A6EA82 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C4E28DFF2F9CA4E600A6EA82 /* relinkUITests */,
+			);
+			name = relinkUITests;
+			packageProductDependencies = (
+			);
+			productName = relinkUITests;
+			productReference = C4E28DFC2F9CA4E600A6EA82 /* relinkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4E28DDD2F9CA4E400A6EA82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					C4E28DE42F9CA4E400A6EA82 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					C4E28DF12F9CA4E600A6EA82 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = C4E28DE42F9CA4E400A6EA82;
+					};
+					C4E28DFB2F9CA4E600A6EA82 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = C4E28DE42F9CA4E400A6EA82;
+					};
+				};
+			};
+			buildConfigurationList = C4E28DE02F9CA4E400A6EA82 /* Build configuration list for PBXProject "relink" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4E28DDC2F9CA4E400A6EA82;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C4E28DE62F9CA4E400A6EA82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4E28DE42F9CA4E400A6EA82 /* relink */,
+				C4E28DF12F9CA4E600A6EA82 /* relinkTests */,
+				C4E28DFB2F9CA4E600A6EA82 /* relinkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4E28DE32F9CA4E400A6EA82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4E28DF02F9CA4E600A6EA82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4E28DFA2F9CA4E600A6EA82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4E28DE12F9CA4E400A6EA82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4E28DEE2F9CA4E600A6EA82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4E28DF82F9CA4E600A6EA82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4E28DF42F9CA4E600A6EA82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4E28DE42F9CA4E400A6EA82 /* relink */;
+			targetProxy = C4E28DF32F9CA4E600A6EA82 /* PBXContainerItemProxy */;
+		};
+		C4E28DFE2F9CA4E600A6EA82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4E28DE42F9CA4E400A6EA82 /* relink */;
+			targetProxy = C4E28DFD2F9CA4E600A6EA82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C4E28E042F9CA4E600A6EA82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9G8RQX8VS9;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4E28E052F9CA4E600A6EA82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9G8RQX8VS9;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4E28E072F9CA4E600A6EA82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AGENTMAIL_API_KEY = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G8RQX8VS9;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = YES;
+				ENABLE_RESOURCE_ACCESS_CAMERA = YES;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = YES;
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					"backend/**",
+					"**/.venv/**",
+					"**/__pycache__/**",
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/relink/.pycache/Library/Developer/CommandLineTools/Library/Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ANTHROPIC_API_KEY = "";
+				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoads = YES;
+				INFOPLIST_KEY_NSContactsUsageDescription = "Relink uses Contacts to link people to your address book.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "reLink needs microphone access to record voice memories.";
+				INFOPLIST_KEY_OPENAI_API_KEY = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = noor.relink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4E28E082F9CA4E600A6EA82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AGENTMAIL_API_KEY = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G8RQX8VS9;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = YES;
+				ENABLE_RESOURCE_ACCESS_CAMERA = YES;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = YES;
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					"backend/**",
+					"**/.venv/**",
+					"**/__pycache__/**",
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/relink/.pycache/Library/Developer/CommandLineTools/Library/Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ANTHROPIC_API_KEY = "";
+				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoads = YES;
+				INFOPLIST_KEY_NSContactsUsageDescription = "Relink uses Contacts to link people to your address book.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "reLink needs microphone access to record voice memories.";
+				INFOPLIST_KEY_OPENAI_API_KEY = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = noor.relink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C4E28E0A2F9CA4E600A6EA82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G8RQX8VS9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = noor.relinkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/relink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/relink";
+			};
+			name = Debug;
+		};
+		C4E28E0B2F9CA4E600A6EA82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G8RQX8VS9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = noor.relinkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/relink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/relink";
+			};
+			name = Release;
+		};
+		C4E28E0D2F9CA4E600A6EA82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G8RQX8VS9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = noor.relinkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = relink;
+			};
+			name = Debug;
+		};
+		C4E28E0E2F9CA4E600A6EA82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G8RQX8VS9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = noor.relinkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = relink;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4E28DE02F9CA4E400A6EA82 /* Build configuration list for PBXProject "relink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4E28E042F9CA4E600A6EA82 /* Debug */,
+				C4E28E052F9CA4E600A6EA82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4E28E062F9CA4E600A6EA82 /* Build configuration list for PBXNativeTarget "relink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4E28E072F9CA4E600A6EA82 /* Debug */,
+				C4E28E082F9CA4E600A6EA82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4E28E092F9CA4E600A6EA82 /* Build configuration list for PBXNativeTarget "relinkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4E28E0A2F9CA4E600A6EA82 /* Debug */,
+				C4E28E0B2F9CA4E600A6EA82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4E28E0C2F9CA4E600A6EA82 /* Build configuration list for PBXNativeTarget "relinkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4E28E0D2F9CA4E600A6EA82 /* Debug */,
+				C4E28E0E2F9CA4E600A6EA82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4E28DDD2F9CA4E400A6EA82 /* Project object */;
+}

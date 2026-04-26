@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+openai
+anthropic
+httpx
+python-multipart
+chromadb
+python-dotenv
+apscheduler
+

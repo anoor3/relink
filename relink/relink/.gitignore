@@ -1,0 +1,18 @@
+# Secrets
+.env
+backend/.env
+
+# Python
+__pycache__/
+.pycache/
+*.pyc
+.venv/
+venv/
+.relink-backend-venv/
+
+# Local databases
+backend/*.sqlite
+backend/*.sqlite3
+
+# macOS
+.DS_Store
